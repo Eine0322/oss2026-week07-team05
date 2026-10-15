@@ -44,8 +44,24 @@ section {
 }
 
 /* ===== A: #intro ===== */
-/* 선택자는 #intro 로 시작합니다. 예: #intro h1 { ... } */
 
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro .cta {
+  text-decoration: none;
+  background-color: #284b7c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+#intro .cta:hover {
+  background-color: #183153;
+}
 
 /* ===== B: #schedule ===== */
 /* 선택자는 #schedule 로 시작합니다. 예: #schedule table { ... } */
@@ -60,7 +76,6 @@ section {
   border-bottom: 1px solid #ddd;
   text-align: left;
 }
-
 
 /* ===== C: #faq ===== */
 #faq .question {
